@@ -1,0 +1,80 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  font-family: CeraRegular;
+}
+
+p {
+  line-height: 1.75;
+  font-family: CeraLight;
+}
+
+a {
+  // color: $primary;
+  color: #000000;
+  &:hover {
+    color: #000FFF;
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  font-family: CeraRegular;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: CeraLight;
+}
+
+.page-section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 100px;
+    text-transform: none;
+    font-size: CeraLight;
+  }
+  h4.section-title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+

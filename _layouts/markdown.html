@@ -1,0 +1,9 @@
+{% assign markdown_files = site.pages | where: "extname", ".md" %}
+
+{% for file in markdown_files %}
+  {% capture content %}
+    {% include {{ file.name }} %}
+  {% endcapture %}
+
+  {{ content }}
+{% endfor %}

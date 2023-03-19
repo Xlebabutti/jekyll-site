@@ -1,0 +1,130 @@
+<!-- About -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+<section class="page-section" id="{{ site.data.sitetext[site.locale].about-platform.section | default: "about-platform" }}">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-lowercase">{{ site.data.sitetext[site.locale].about-platform.title | default: "облачная платформа extremum" }}</h2>
+        <h3 class="section-subheading definition col-9 m-auto">{{ site.data.sitetext[site.locale].about-platform.text | default: "" }}</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9 mx-auto text-center">
+        <!-- <div class="large text-muted">{{ site.data.sitetext[site.locale].about.body | markdownify }}</div> -->
+            <div class="large text-muted slide-list">
+              
+                <div class="slide s-5">
+                    <div class="slide-title-left title-h2">У вас сразу есть:</div>
+                    <ul class="slide-item">
+                        <li>«cloud native» архитектура со свободным динамическим автомасштабированием</li>
+                        <li>веб-API высокой производительности и надёжности с поддержкой <span class="text-bold">REST</span>, <span class="text-bold">GraphQL</span> и <span class="text-bold">gRPC</span></li>
+                        <li>продвинутый инструментарий ведения учётных записей, аутентификации различными методами и авторизации с гибкими правилами доступа</li>
+                        <li>поддержка различных <span class="text-bold">СУБД</span> с возможностью их прозрачного комбинированного использования</li>
+                        <li>управление массивным разнородным контентом</li>
+                        <li>многоязыковая поддержка</li>
+                        <li>полный комплекс эксплуатационных инструментов для мониторинга и быстрой диагностики проблем</li>
+                    </ul>
+                </div>
+
+                <div class="slide s-6">
+                    <div class="slide-title-left title-h2">Возможность решать любые задачи</div>
+                    <ul class="slide-item">
+                        <li>сервисы многоканального обслуживания</li>
+                        <li>сервисы с обширной онлайн-интеграцией</li>
+                        <li>системы сбора и представления больших данных</li>
+                        <li>системы агрегирования и раздачи сложного мультимедийного контента</li>
+                    </ul>
+                </div>
+
+                <div class="col-5 slide s-10">
+                    <div class="slide-title-left title-h2">Для кого подходит?</div>
+
+                    <div class="slide-sub">
+                        <div class="slide-title-left title-h5">корпоротивный сегмент</div>
+                        <ul class="slide-item">  
+                            <li>крупные организации и группы компаний</li>
+                            <li>промышленные предприятия</li>
+                            <li>госсектор</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide-sub">
+                        <div class="slide-title-left title-h5">профессиональный сегмент</div>
+                        <ul class="slide-item">
+                            <li>IT компании</li>
+                            <li>высокотехнологичные стартапы</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide-sub">
+                        <div class="slide-title-left title-h5">массовый сегмент</div>
+                        <ul class="slide-item">
+                            <li>микробизнес</li>
+                            <li>фрилансеры</li>
+                            <li>начинающие стартаперы</li>
+                            <li>обучающиеся</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="slide s-11">
+                    <div class="slide-title-left title-h2">Варианты дистрибутивов платформы</div>
+                    <div class="slide-sub">
+                        <div class="slide-title-left title-h5">extremum.black</div>
+                        <ul>
+                            <li>для частной и гибридной инфраструктуры</li>
+                            <li>полнофункциональная сборка</li>
+                            <li>горизонтальное масштабирование</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide-sub">
+                        <div class="slide-title-left title-h5">extremum.pro</div>
+                        <ul>
+                            <li>для PaaS-облаков</li>
+                            <li>полнофункциональная сборка</li>
+                            <li>горизонтальное масштабирование</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide-sub">
+                        <div class="slide-title-left title-h5">extremum.express</div>
+                        <ul>
+                            <li>для небольших установок</li>
+                            <li>компактная сборка</li>
+                            <li>органическое масштабирование</li>
+                        </ul>
+                    </div>
+               </div>               
+            </div>       
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="page-section" id="{{ site.data.sitetext.about.section | default: "about" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-lowercase">{{ site.data.sitetext.about.title | default: "About Us" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext.about.text | default: "" }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="large text-muted">{{ site.data.sitetext.about.body | markdownify }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End About -->
+
+
+<style>
+.definition {
+  font-size: 20px !important;
+}
+</style>

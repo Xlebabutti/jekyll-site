@@ -1,0 +1,106 @@
+.slide-list li{
+    padding: 3px;
+    text-align: left;
+}
+
+.slide {
+    margin: 35px 0 0 0;
+}
+
+.slide-title-centre {
+    font-weight: 100 !important;
+    font-size: 30px;
+    color: #444;
+}
+
+.slide-title-left {
+    text-align: left !important;
+}
+
+.slide-item {
+    margin: 5px 0 20px 0 !important;
+}
+
+.title-main {
+    color: black;
+}
+
+.slide-sub {
+    margin: 12px 0 0 0 !important;
+}
+
+.slide-title-left.title-h2 {
+    color: #444 !important;
+    font-weight: 100 !important;
+    font-size: 30px;
+}
+.title-h5 {
+    color: #6c757d!important;
+    font-weight: 400 !important;
+    font-size: 20px;
+}
+
+// left bar in menu
+.navbar-extremum {
+    color: white;
+    font-size: 22px;
+    font-family: CeraBold;
+    margin-left: 1rem;
+}
+
+//  navheader
+.masthead {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    // color: #a5a5a5;
+    padding: 0 !important;
+    margin: 0 !important;
+    .intro-lead-in {
+        padding: 0 !important;
+        margin: 0 !important;
+        p {
+            font-family: CeraRegular;
+            font-style: normal;
+            font-size: 70px;
+            margin: 0 !important;
+        }
+    }
+}
+// End navheader
+
+//  icon
+.text-primary {
+    color: #0000FF !important;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-extremum-cli,
+.icon-extremum-studio,
+.icon-client-libraries {
+    font-size: 50px;
+}
+//  end icon
+
+// tools
+.service-heading {
+    font-weight: 300;
+}
+.section-heading {
+    font-weight: 100 !important;
+}
+.section-subheading {
+    font-style: normal !important;
+}
+// end tools
+
+// img
+
+// end img
